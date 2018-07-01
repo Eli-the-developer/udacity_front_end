@@ -7,7 +7,7 @@
 function colorCell(){
     $('.table_cell').click(function(){
         //get color value
-        var color = $('#colorPicker').val();
+        let color = $('#colorPicker').val();
         //check if cell has attribute named style
         if ($(this).attr('style')){
             //remove attribute if exists
@@ -27,9 +27,9 @@ function makeGrid() {
     //prevent duplicates of additional rows after clicking the submit button
     $('tr').remove();
     //Get the height of the table
-   var rows = $('#inputHeight').val();
+   const rows = $('#inputHeight').val();
    //Get the width of the table
-   var cols = $('#inputWeight').val()
+   const cols = $('#inputWeight').val();
     
    //add rows
    for (var x = 1; x <= rows; x ++){
